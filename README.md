@@ -1,2 +1,2 @@
-# wyt-
+# wyt
 Wait your turn!
