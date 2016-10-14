@@ -1,20 +1,20 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/tmp
+/dev/mss/frontend/dist
+/dev/mss/frontend/tmp
 
 # dependencies
 /dev/mss/frontend/node_modules
 /dev/mss/frontend/bower_components
 
 # IDEs and editors
-/.idea
-/.vscode
-.project
-.classpath
-*.launch
-.settings/
+/dev/mss/frontend/.idea
+/dev/mss/frontend/.vscode
+/dev/mss/frontend.project
+/dev/mss/frontend.classpath
+/dev/mss/frontend*.launch
+/dev/mss/frontend.settings/
 
 # Java
 *.class
@@ -23,17 +23,17 @@
 *.ear
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
+/dev/mss/frontend/.sass-cache
+/dev/mss/frontend/connect.lock
+/dev/mss/frontend/coverage/*
+/dev/mss/frontend/libpeerconnection.log
+/dev/mss/frontendnpm-debug.log
+/dev/mss/frontendtestem.log
+/dev/mss/frontend/typings
 
 # e2e
-/e2e/*.js
-/e2e/*.map
+/dev/mss/frontend/e2e/*.js
+/dev/mss/frontend/e2e/*.map
 
 #System Files
 .DS_Store
@@ -41,7 +41,4 @@ Thumbs.db
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
