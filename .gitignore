@@ -9,6 +9,7 @@
 /dev/mss/frontend/bower_components
 
 # IDEs and editors
+.idea
 *.iml
 *.launch
 /dev/mss/frontend/.idea
