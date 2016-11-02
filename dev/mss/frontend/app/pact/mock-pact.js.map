@@ -1,0 +1,1 @@
+{"version":3,"file":"mock-pact.js","sourceRoot":"","sources":["mock-pact.ts"],"names":[],"mappings":";AAEa,YAAI,GAAS;IACtB,EAAE,EAAE,CAAC;IACL,KAAK,EAAE,sDAAsD;IAC7D,OAAO,EAAE,CAAC,SAAS,EAAE,UAAU,CAAC;IAChC,iBAAiB,EAAE,qCAAqC;IACxD,oBAAoB,EAAE,yBAAyB;CAClD,CAAC"}

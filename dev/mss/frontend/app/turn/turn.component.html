@@ -1,0 +1,18 @@
+<form class="form-horizontal">
+    <legend>Current Turn</legend>
+    <fieldset>
+        <div class="form-group">
+            <label for="idCurrent" class="col-xs-3 control-label">Who's turn?</label>
+            <div class="col-xs-7">
+                <input type="text" class="form-control" id="idCurrent" value="{{turn.current}}" disabled>
+            </div>
+            <button class="col-xs-1 btn btn-custom pull-left" type="submit">Confirm</button>
+        </div>
+        <div class="form-group">
+            <label for="idCurrent" class="col-xs-3 control-label">Last confirmation?</label>
+            <div class="col-xs-7">
+                <input type="text" class="form-control" id="idCurrent" value="{{turn.lastConfirmation}}" disabled>
+            </div>
+        </div>
+    </fieldset>
+</form>

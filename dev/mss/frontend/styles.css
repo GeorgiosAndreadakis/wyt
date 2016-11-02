@@ -1,0 +1,63 @@
+/* Master Styles */
+
+/*
+    #6837B2 (Lila, ganz dunkel)
+    #934BFF (Lila, dunkler)
+    #A265FF (Lila, dunkel)
+
+    #B2AD11 (Zitrone, dunkler)
+    #FFF94B (Zitrone)
+*/
+
+h2, legend {
+    color: white;
+}
+
+.btn-custom {
+    background-color: #B2AD11;
+    border-color: #B2AD11;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+    background-color: #9b960f;
+    border-color: #83800d;
+}
+
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+    background-color: #B2AD11;
+    border-color: #B2AD11;
+}
+
+.wyt-app {
+    background-color: #6837B2;
+    border-radius: 25px;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.pact-panel {
+    background-color: #934BFF;
+    border-radius: 10px;
+}
+
+.turn-panel {
+    background-color: #A265FF;
+    border-radius: 10px;
+}
