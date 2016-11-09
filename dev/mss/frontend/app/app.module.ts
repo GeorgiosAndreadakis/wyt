@@ -1,5 +1,6 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule }       from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
+import { HttpModule }     from '@angular/http';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -10,7 +11,7 @@ import { PactComponent }   from './pact/pact.component';
 import { TurnComponent }   from './turn/turn.component';
 
 @NgModule({
-    imports:      [ BrowserModule, NgbModule.forRoot() ],
+    imports:      [ BrowserModule, HttpModule, NgbModule.forRoot() ],
     declarations: [ AppComponent, PactComponent, TurnComponent ],
     providers:    [ PactService, TurnService ],
     bootstrap:    [ AppComponent ]

@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
 var ng_bootstrap_1 = require('@ng-bootstrap/ng-bootstrap');
 var pact_service_1 = require('./pact/pact.service');
 var turn_service_1 = require('./turn/turn.service');
@@ -21,7 +22,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, ng_bootstrap_1.NgbModule.forRoot()],
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, ng_bootstrap_1.NgbModule.forRoot()],
             declarations: [app_component_1.AppComponent, pact_component_1.PactComponent, turn_component_1.TurnComponent],
             providers: [pact_service_1.PactService, turn_service_1.TurnService],
             bootstrap: [app_component_1.AppComponent]

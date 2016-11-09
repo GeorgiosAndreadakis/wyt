@@ -8,15 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var pact_service_1 = require('./pact.service');
+var core_1 = require("@angular/core");
+var pact_service_1 = require("./pact.service");
 var PactComponent = (function () {
     function PactComponent(pactService) {
         this.pactService = pactService;
     }
     PactComponent.prototype.ngOnInit = function () {
-        this.pact = this.pactService.getPact();
-        this.members = this.pact.members;
+        var _this = this;
+        this.pactService.getPactObservable()
+            .subscribe(function (found) {
+            console.log('Pact given: ' + found);
+            _this.members = found.members;
+            _this.title = found.title;
+            _this.selectionStrategy = found.selectionStrategy;
+            _this.confirmationStrategy = found.confirmationStrategy;
+        }, function (error) { return _this.errorMessage = error; });
     };
     PactComponent = __decorate([
         core_1.Component({
