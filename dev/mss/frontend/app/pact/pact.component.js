@@ -16,7 +16,7 @@ var PactComponent = (function () {
     }
     PactComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.pactService.getPactObservable()
+        this.pactService.getPact()
             .subscribe(function (found) {
             console.log('Pact given: ' + found);
             _this.members = found.members;

@@ -5,7 +5,6 @@ import 'rxjs/add/operator/catch'
 import {Observable} from 'rxjs/Observable';
 
 import {Pact} from './pact';
-import {PACT} from './mock-pact'
 
 @Injectable()
 export class PactService {
@@ -14,11 +13,7 @@ export class PactService {
 
   constructor(private http:Http) {}
 
-  getPactMock():Pact {
-    return PACT;
-  }
-
-  getPactObservable():Observable<Pact> {
+  getPact():Observable<Pact> {
     let obs:Observable<Pact> = this.http.get(this.url)
       .map((res:Response) => {
         return res.json();

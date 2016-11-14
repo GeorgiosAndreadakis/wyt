@@ -4,8 +4,7 @@ import {DebugElement} from '@angular/core';
 import {HttpModule}     from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 
-import {PACT} from './mock-pact'
-
+import {Pact} from './pact';
 import {PactComponent} from './pact.component';
 import {PactService} from "./pact.service";
 import Spy = jasmine.Spy;
@@ -40,10 +39,8 @@ describe('PactConmponent', () => {
     pactService = fixture.debugElement.injector.get(PactService);
 
     // Setup spy on the `getPact` method
-    spy = spyOn(pactService, 'getPactObservable')
-      .and.returnValue(Observable.create(function (observer) {
-        PACT
-      }));
+    spy = spyOn(pactService, 'getPact')
+      .and.returnValue(Observable.create(function (observer) {new Pact}));
 
     // get test component from the fixture
     comp = fixture.componentInstance;

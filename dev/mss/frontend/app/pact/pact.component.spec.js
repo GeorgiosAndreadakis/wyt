@@ -3,7 +3,7 @@ var testing_1 = require('@angular/core/testing');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var Observable_1 = require('rxjs/Observable');
-var mock_pact_1 = require('./mock-pact');
+var pact_1 = require('./pact');
 var pact_component_1 = require('./pact.component');
 var pact_service_1 = require("./pact.service");
 var fixture;
@@ -29,10 +29,8 @@ describe('PactConmponent', function () {
         fixture = testing_1.TestBed.createComponent(pact_component_1.PactComponent);
         pactService = fixture.debugElement.injector.get(pact_service_1.PactService);
         // Setup spy on the `getPact` method
-        spy = spyOn(pactService, 'getPactObservable')
-            .and.returnValue(Observable_1.Observable.create(function (observer) {
-            mock_pact_1.PACT;
-        }));
+        spy = spyOn(pactService, 'getPact')
+            .and.returnValue(Observable_1.Observable.create(function (observer) { new pact_1.Pact; }));
         // get test component from the fixture
         comp = fixture.componentInstance;
     });

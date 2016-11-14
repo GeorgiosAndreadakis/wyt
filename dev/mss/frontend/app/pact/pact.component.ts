@@ -19,7 +19,7 @@ export class PactComponent implements OnInit {
   }
 
   ngOnInit():void {
-    this.pactService.getPactObservable()
+    this.pactService.getPact()
       .subscribe(
         found => {
           console.log('Pact given: ' + found);

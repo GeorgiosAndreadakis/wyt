@@ -13,16 +13,12 @@ var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/catch');
 var Observable_1 = require('rxjs/Observable');
-var mock_pact_1 = require('./mock-pact');
 var PactService = (function () {
     function PactService(http) {
         this.http = http;
         this.url = 'http://pact.int.skysail.io/pact/v1?media=json';
     }
-    PactService.prototype.getPactMock = function () {
-        return mock_pact_1.PACT;
-    };
-    PactService.prototype.getPactObservable = function () {
+    PactService.prototype.getPact = function () {
         var obs = this.http.get(this.url)
             .map(function (res) {
             return res.json();
