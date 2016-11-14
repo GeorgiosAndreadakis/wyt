@@ -1,6 +1,7 @@
 "use strict";
 var testing_1 = require('@angular/core/testing');
 var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
 var Observable_1 = require('rxjs/Observable');
 var mock_pact_1 = require('./mock-pact');
 var pact_component_1 = require('./pact.component');
@@ -14,6 +15,7 @@ var spy;
 describe('PactConmponent', function () {
     beforeEach(testing_1.async(function () {
         testing_1.TestBed.configureTestingModule({
+            imports: [http_1.HttpModule],
             declarations: [pact_component_1.PactComponent],
             providers: [pact_service_1.PactService]
         })

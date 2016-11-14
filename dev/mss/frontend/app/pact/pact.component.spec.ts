@@ -1,9 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { HttpModule }     from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 
-import {Pact} from './pact';
 import {PACT} from './mock-pact'
 
 import { PactComponent } from './pact.component';
@@ -23,6 +23,7 @@ describe('PactConmponent', () => {
 
   beforeEach( async(() => {
     TestBed.configureTestingModule({
+      imports: [ HttpModule ],
       declarations: [ PactComponent ],
       providers: [ PactService ]
     })
