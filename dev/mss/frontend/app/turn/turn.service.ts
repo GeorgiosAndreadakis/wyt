@@ -1,12 +1,19 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {Http} from '@angular/http';
 
-import { Turn } from './turn';
-import { TURN } from './mock-turn'
+import {ConfigService} from '../config.service';
+import {WytService} from '../wyt.service';
+import {Turn} from './turn';
+import {TURN} from './mock-turn'
 
 @Injectable()
-export class TurnService {
+export class TurnService extends WytService {
 
-    getTurn(): Turn {
-        return TURN;
-    }
+  constructor(protected httpService:Http, protected configService:ConfigService) {
+    super(httpService, configService);
+  }
+
+  getTurn():Turn {
+    return TURN;
+  }
 }
