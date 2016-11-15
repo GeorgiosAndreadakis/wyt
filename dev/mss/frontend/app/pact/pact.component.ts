@@ -5,7 +5,8 @@ import {PactService} from "./pact.service";
   moduleId: module.id,
   selector: 'pact',
   templateUrl: './pact.component.html',
-  styleUrls: ['./pact.component.css']
+  styleUrls: ['./pact.component.css'],
+  providers: [PactService]
 })
 export class PactComponent implements OnInit {
 

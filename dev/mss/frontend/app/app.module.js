@@ -13,8 +13,6 @@ var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var ng_bootstrap_1 = require('@ng-bootstrap/ng-bootstrap');
 var config_service_1 = require('./config.service');
-var pact_service_1 = require('./pact/pact.service');
-var turn_service_1 = require('./turn/turn.service');
 var app_component_1 = require('./app.component');
 var pact_component_1 = require('./pact/pact.component');
 var turn_component_1 = require('./turn/turn.component');
@@ -25,7 +23,7 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, http_1.HttpModule, ng_bootstrap_1.NgbModule.forRoot()],
             declarations: [app_component_1.AppComponent, pact_component_1.PactComponent, turn_component_1.TurnComponent],
-            providers: [config_service_1.ConfigService, pact_service_1.PactService, turn_service_1.TurnService],
+            providers: [config_service_1.ConfigService],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

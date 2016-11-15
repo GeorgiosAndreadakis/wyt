@@ -21,7 +21,8 @@ var TurnComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'turn',
-            templateUrl: './turn.component.html'
+            templateUrl: './turn.component.html',
+            providers: [turn_service_1.TurnService]
         }), 
         __metadata('design:paramtypes', [turn_service_1.TurnService])
     ], TurnComponent);

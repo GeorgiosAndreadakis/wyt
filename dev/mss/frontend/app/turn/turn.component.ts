@@ -1,21 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-import { Turn } from './turn';
-import { TurnService } from './turn.service';
+import {Turn} from './turn';
+import {TurnService} from './turn.service';
 
 @Component({
-    moduleId: module.id,
-    selector: 'turn',
-    templateUrl: './turn.component.html'
+  moduleId: module.id,
+  selector: 'turn',
+  templateUrl: './turn.component.html',
+  providers: [TurnService]
 })
 export class TurnComponent implements OnInit {
 
-    turn: Turn;
+  turn:Turn;
 
-    constructor(private turnService: TurnService) { }
+  constructor(private turnService:TurnService) {
+  }
 
-    ngOnInit(): void {
-        this.turn = this.turnService.getTurn();
-    }
+  ngOnInit():void {
+    this.turn = this.turnService.getTurn();
+  }
 
 }
