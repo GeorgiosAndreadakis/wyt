@@ -1,8 +1,11 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
 /dev/mss/frontend/dist
 /dev/mss/frontend/tmp
+/dev/mss/frontend/app/config.service.js
+/dev/mss/frontend/app/config.service.js.map
+/dev/mss/frontend/app/wyt.service.js
+/dev/mss/frontend/app/wyt.service.js.map
 
 # dependencies
 /dev/mss/frontend/node_modules
