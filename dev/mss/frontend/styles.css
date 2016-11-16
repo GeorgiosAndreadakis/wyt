@@ -1,21 +1,18 @@
 /* Master Styles */
 
-/*
-    #6837B2 (Lila, ganz dunkel)
-    #934BFF (Lila, dunkler)
-    #A265FF (Lila, dunkel)
-
-    #B2AD11 (Zitrone, dunkler)
-    #FFF94B (Zitrone)
-*/
+body {
+  background-color: #f4f4f4;
+  height: 100%;
+  min-height: 100%;
+}
 
 h2, legend {
-    color: white;
+    color: #f4f4f4;
 }
 
 .btn-custom {
-    background-color: #B2AD11;
-    border-color: #B2AD11;
+    background-color: #2C3B40;
+    border-color: #2C3B40;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -23,11 +20,7 @@ h2, legend {
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom:active,
-.btn-custom.active {
-    background-color: #9b960f;
-    border-color: #83800d;
-}
-
+.btn-custom.active,
 .btn-custom.disabled:hover,
 .btn-custom.disabled:focus,
 .btn-custom.disabled:active,
@@ -40,24 +33,28 @@ fieldset[disabled] .btn-custom:hover,
 fieldset[disabled] .btn-custom:focus,
 fieldset[disabled] .btn-custom:active,
 fieldset[disabled] .btn-custom.active {
-    background-color: #B2AD11;
-    border-color: #B2AD11;
+    background-color: #57777F;
+    border-color: #57777F;
 }
 
 .wyt-app {
-    background-color: #6837B2;
+    background-color: #57777F;
     border-radius: 25px;
-    color: white;
+    color: #f4f4f4;
     padding: 20px;
     margin: 10px;
 }
 
 .pact-panel {
-    background-color: #934BFF;
+    background-color: #2C3B40;
     border-radius: 10px;
 }
 
 .turn-panel {
-    background-color: #A265FF;
+    background-color: #83B2BF;
     border-radius: 10px;
+}
+
+input.form-control {
+    background-color: #f4f4f4 !important;
 }
