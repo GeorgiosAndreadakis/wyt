@@ -15,7 +15,11 @@ var TurnComponent = (function () {
         this.turnService = turnService;
     }
     TurnComponent.prototype.ngOnInit = function () {
-        this.turn = this.turnService.getTurn();
+        var _this = this;
+        this.turnService.getTurn().subscribe(function (found) {
+            _this.current = found.name;
+            _this.lastConfirmation = 'dummy mock';
+        }, function (error) { return _this.errorMessage = error; });
     };
     TurnComponent = __decorate([
         core_1.Component({

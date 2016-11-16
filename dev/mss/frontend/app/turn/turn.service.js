@@ -15,9 +15,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
+require('rxjs/add/operator/map');
+require('rxjs/add/operator/catch');
 var config_service_1 = require('../config.service');
 var wyt_service_1 = require('../wyt.service');
-var mock_turn_1 = require('./mock-turn');
 var TurnService = (function (_super) {
     __extends(TurnService, _super);
     function TurnService(httpService, configService) {
@@ -26,7 +27,12 @@ var TurnService = (function (_super) {
         this.configService = configService;
     }
     TurnService.prototype.getTurn = function () {
-        return mock_turn_1.TURN;
+        var url = this.config.getTurnUrl();
+        return this.http.get(url)
+            .map(function (res) {
+            return res.json();
+        })
+            .catch(this.handleError);
     };
     TurnService = __decorate([
         core_1.Injectable(), 

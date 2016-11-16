@@ -1,5 +1,5 @@
 export class Turn {
     id: number;
-    current: string;
+    name: string;
     lastConfirmation: string;
 }

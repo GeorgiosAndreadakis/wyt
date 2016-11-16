@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 
-import {Turn} from './turn';
 import {TurnService} from './turn.service';
 
 @Component({
@@ -11,13 +10,20 @@ import {TurnService} from './turn.service';
 })
 export class TurnComponent implements OnInit {
 
-  turn:Turn;
+  current:string;
+  lastConfirmation:string;
+  errorMessage:string;
 
   constructor(private turnService:TurnService) {
   }
 
   ngOnInit():void {
-    this.turn = this.turnService.getTurn();
+    this.turnService.getTurn().subscribe(
+        found => {
+          this.current = found.name;
+          this.lastConfirmation = 'dummy mock';
+        },
+        error => this.errorMessage = <any>error
+      );
   }
-
 }
