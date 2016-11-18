@@ -18,7 +18,6 @@ var PactComponent = (function () {
         var _this = this;
         this.pactService.getPact()
             .subscribe(function (found) {
-            console.log('Pact given: ' + found);
             _this.members = found.members;
             _this.title = found.title;
             _this.selectionStrategy = found.selectionStrategy;

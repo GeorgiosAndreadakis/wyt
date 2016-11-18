@@ -17,6 +17,8 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/catch');
+//import 'rxjs/add/observable/of';
+//import {PACT} from './mock-pact';
 var config_service_1 = require('../config.service');
 var wyt_service_1 = require('../wyt.service');
 var PactService = (function (_super) {

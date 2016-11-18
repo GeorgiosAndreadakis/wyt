@@ -23,7 +23,6 @@ export class PactComponent implements OnInit {
     this.pactService.getPact()
       .subscribe(
         found => {
-          console.log('Pact given: ' + found);
           this.members = found.members;
           this.title = found.title;
           this.selectionStrategy = found.selectionStrategy;
