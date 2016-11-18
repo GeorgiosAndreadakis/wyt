@@ -5,9 +5,6 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import {Observable} from 'rxjs/Observable';
 
-//import 'rxjs/add/observable/of';
-//import {PACT} from './mock-pact';
-
 import {ConfigService} from '../config.service';
 import {WytService} from '../wyt.service';
 import {Pact} from './pact';
