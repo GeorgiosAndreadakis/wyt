@@ -12,6 +12,10 @@
 /dev/mss/frontend/app/pact/pact.component.spec.js.map
 /dev/mss/frontend/app/pact/pact.service.js
 /dev/mss/frontend/app/pact/pact.service.js.map
+/dev/mss/frontend/app/turn/turn.component.js
+/dev/mss/frontend/app/turn/turn.component.js.map
+/dev/mss/frontend/app/turn/turn.component.spec.js
+/dev/mss/frontend/app/turn/turn.component.spec.js.map
 
 # dependencies
 /dev/mss/frontend/node_modules
