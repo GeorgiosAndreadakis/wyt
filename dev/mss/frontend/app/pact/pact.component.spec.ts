@@ -62,12 +62,21 @@ describe('PactConmponent', () => {
     comp = fixture.componentInstance;
   }));
 
-  it('should display a title', async(() => {
+  it('should display the correct title', async(() => {
     fixture.detectChanges();
     fixture.whenStable().then(() => {
       fixture.detectChanges();
-      de = fixture.debugElement.query(By.css('#title'));
+      de = fixture.debugElement.query(By.css('#idTitle'));
       expect(de.nativeElement.value).toBe('[DUMMY] Who gets the receipt for the entertainment expenses?');
+    });
+  }));
+
+  it('should display the correct confirmation strategy', async(() => {
+    fixture.detectChanges();
+    fixture.whenStable().then(() => {
+      fixture.detectChanges();
+      de = fixture.debugElement.query(By.css('#idConfirmationStrategy'));
+      expect(de.nativeElement.value).toBe('On a confidential basis');
     });
   }));
 });
