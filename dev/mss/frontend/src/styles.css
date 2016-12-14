@@ -7,14 +7,14 @@ body {
 }
 
 h2, legend {
-    color: #f4f4f4;
+  color: #f4f4f4;
 }
 
 .btn-custom {
-    background-color: #2C3B40;
-    border-color: #2C3B40;
-    margin-left: 15px;
-    margin-right: 15px;
+  background-color: #2C3B40;
+  border-color: #2C3B40;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .btn-custom:hover,
@@ -33,28 +33,28 @@ fieldset[disabled] .btn-custom:hover,
 fieldset[disabled] .btn-custom:focus,
 fieldset[disabled] .btn-custom:active,
 fieldset[disabled] .btn-custom.active {
-    background-color: #57777F;
-    border-color: #57777F;
+  background-color: #57777F;
+  border-color: #57777F;
 }
 
 .wyt-app {
-    background-color: #57777F;
-    border-radius: 25px;
-    color: #f4f4f4;
-    padding: 20px;
-    margin: 10px;
+  background-color: #57777F;
+  border-radius: 25px;
+  color: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
 }
 
 .pact-panel {
-    background-color: #2C3B40;
-    border-radius: 10px;
+  background-color: #2C3B40;
+  border-radius: 10px;
 }
 
 .turn-panel {
-    background-color: #83B2BF;
-    border-radius: 10px;
+  background-color: #83B2BF;
+  border-radius: 10px;
 }
 
 input.form-control {
-    background-color: #f4f4f4 !important;
+  background-color: #f4f4f4 !important;
 }

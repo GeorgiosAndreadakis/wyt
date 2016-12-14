@@ -3,6 +3,7 @@ import {Http, Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 
 import {ConfigService} from './config.service';
+import {ErrorObservable} from "rxjs/observable/ErrorObservable";
 
 @Injectable()
 export class WytService {
@@ -10,7 +11,7 @@ export class WytService {
   constructor(protected http:Http, protected config:ConfigService) {
   }
 
-  protected handleError(error:Response | any) {
+  protected handleError(error:Response | any): ErrorObservable {
     // In a real world app, we might use a remote logging infrastructure
     let errMsg:string;
     if (error instanceof Response) {

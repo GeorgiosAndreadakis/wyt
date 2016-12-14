@@ -10,9 +10,9 @@ import { PactComponent }   from './pact/pact.component';
 import { TurnComponent }   from './turn/turn.component';
 
 @NgModule({
-    imports:      [ BrowserModule, HttpModule, NgbModule.forRoot() ],
-    declarations: [ AppComponent, PactComponent, TurnComponent ],
-    providers:    [ ConfigService ],
-    bootstrap:    [ AppComponent ]
+  imports:      [ BrowserModule, HttpModule, NgbModule.forRoot() ],
+  declarations: [ AppComponent, PactComponent, TurnComponent ],
+  providers:    [ ConfigService ],
+  bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

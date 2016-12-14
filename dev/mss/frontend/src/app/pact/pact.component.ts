@@ -2,7 +2,6 @@ import {Component, OnInit} from "@angular/core";
 import {PactService} from "./pact.service";
 
 @Component({
-  moduleId: module.id,
   selector: 'pact',
   templateUrl: './pact.component.html',
   styleUrls: ['./pact.component.css'],

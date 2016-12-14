@@ -3,7 +3,6 @@ import {Component, OnInit} from '@angular/core';
 import {TurnService} from './turn.service';
 
 @Component({
-  moduleId: module.id,
   selector: 'turn',
   templateUrl: './turn.component.html',
   providers: [TurnService]
