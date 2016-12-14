@@ -2,6 +2,10 @@
 # compiled output
 /dev/mss/frontend/dist
 /dev/mss/frontend/tmp
+/dev/mss/frontend/app/app.component.js
+/dev/mss/frontend/app/app.component.js.map
+/dev/mss/frontend/app/app.module.js
+/dev/mss/frontend/app/app.module.js.map
 /dev/mss/frontend/app/config.service.js
 /dev/mss/frontend/app/config.service.js.map
 /dev/mss/frontend/app/main.js
@@ -12,6 +16,8 @@
 /dev/mss/frontend/app/pact/pact.component.js.map
 /dev/mss/frontend/app/pact/pact.component.spec.js
 /dev/mss/frontend/app/pact/pact.component.spec.js.map
+/dev/mss/frontend/app/pact/pact.js
+/dev/mss/frontend/app/pact/pact.js.map
 /dev/mss/frontend/app/pact/pact.service.js
 /dev/mss/frontend/app/pact/pact.service.js.map
 /dev/mss/frontend/app/turn/turn.js
@@ -20,6 +26,8 @@
 /dev/mss/frontend/app/turn/turn.component.js.map
 /dev/mss/frontend/app/turn/turn.component.spec.js
 /dev/mss/frontend/app/turn/turn.component.spec.js.map
+/dev/mss/frontend/app/turn/turn.service.js
+/dev/mss/frontend/app/turn/turn.service.js.map
 
 # dependencies
 /dev/mss/frontend/node_modules
