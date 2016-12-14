@@ -4,6 +4,8 @@
 /dev/mss/frontend/tmp
 /dev/mss/frontend/app/config.service.js
 /dev/mss/frontend/app/config.service.js.map
+/dev/mss/frontend/app/main.js
+/dev/mss/frontend/app/main.js.map
 /dev/mss/frontend/app/wyt.service.js
 /dev/mss/frontend/app/wyt.service.js.map
 /dev/mss/frontend/app/pact/pact.component.js
@@ -12,6 +14,8 @@
 /dev/mss/frontend/app/pact/pact.component.spec.js.map
 /dev/mss/frontend/app/pact/pact.service.js
 /dev/mss/frontend/app/pact/pact.service.js.map
+/dev/mss/frontend/app/turn/turn.js
+/dev/mss/frontend/app/turn/turn.js.map
 /dev/mss/frontend/app/turn/turn.component.js
 /dev/mss/frontend/app/turn/turn.component.js.map
 /dev/mss/frontend/app/turn/turn.component.spec.js
