@@ -6,6 +6,6 @@ export class WytA2cliPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('wyt-app h2')).getText();
   }
 }
