@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Http, Response} from '@angular/http';
+import {Http, Response, RequestOptions} from '@angular/http';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -23,5 +23,16 @@ export class TurnService extends WytService {
         return res.json();
       })
       .catch(this.handleError);
+  }
+
+  confirm(name: string) {
+    var url = this.config.getConfirmUrl();
+    let options = new RequestOptions();
+    this.http.post(url, name, options).subscribe(
+      response => {
+        console.log('Result post: ' + response.toString())
+      },
+      error =>  this.handleError(error)
+    );
   }
 }

@@ -25,4 +25,8 @@ export class TurnComponent implements OnInit {
         error => this.errorMessage = <any>error
       );
   }
+
+  confirm():void {
+    this.turnService.confirm(this.current);
+  }
 }
