@@ -19,8 +19,8 @@ export class TurnComponent implements OnInit {
   ngOnInit():void {
     this.turnService.getTurn().subscribe(
         found => {
-          this.current = found.name;
-          this.lastConfirmation = 'dummy mock';
+          this.current = found.candidate;
+          this.lastConfirmation = found.lastConfirmationInfo;
         },
         error => this.errorMessage = <any>error
       );

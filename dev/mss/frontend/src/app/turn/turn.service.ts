@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
-import {Http, Response, RequestOptions} from '@angular/http';
+import {Headers, Http, Response, RequestOptions} from '@angular/http';
 
-import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/catch';
 import {Observable} from 'rxjs/Observable';
 
@@ -27,12 +27,19 @@ export class TurnService extends WytService {
 
   confirm(name: string) {
     var url = this.config.getConfirmUrl();
-    let options = new RequestOptions();
-    this.http.post(url, name, options).subscribe(
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({headers: headers});
+    var user = {
+      'skysail.server.app.pact.domain.Confirmation|user': name
+    };
+    this.http.post(url, JSON.stringify(''), options).subscribe(
       response => {
-        console.log('Result post: ' + response.toString())
+        console.log('Result of the post: ' + response.toString())
       },
-      error =>  this.handleError(error)
+      error =>  {
+        this.handleError(error)
+      }
     );
+
   }
 }
