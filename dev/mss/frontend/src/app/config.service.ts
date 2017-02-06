@@ -8,7 +8,7 @@ export class ConfigService {
   };
 
   getConfirmUrl(): string {
-    return 'http://wyt.skysail.io/pact/v1/confirmations/';
+    return 'http://pact.int.skysail.io/pact/v1/confirmations/';
   };
 
   getTurnUrl(): string {
