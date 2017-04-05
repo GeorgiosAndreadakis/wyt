@@ -30,9 +30,9 @@ export class TurnService extends WytService {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({headers: headers});
     var user = {
-      'skysail.server.app.pact.domain.Confirmation|user': name
+      'user': name
     };
-    this.http.post(url, JSON.stringify(''), options).subscribe(
+    this.http.post(url, JSON.stringify(user), options).subscribe(
       response => {
         console.log('Result of the post: ' + response.toString())
       },
