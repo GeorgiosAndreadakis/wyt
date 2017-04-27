@@ -1,17 +1,18 @@
 import {Injectable} from '@angular/core';
+import {environment} from './environments';
 
 @Injectable()
 export class ConfigService {
 
-  getPactUrl(): string {
-    return 'http://pact.int.skysail.io/pact/v1?media=json';
+  static getConfirmUrl(): string {
+    return environment.confirmUrl;
   };
 
-  getConfirmUrl(): string {
-    return 'http://pact.int.skysail.io/pact/v1/confirmations/';
+  static getPactUrl(): string {
+    return environment.pactUrl;
   };
 
-  getTurnUrl(): string {
-    return 'http://pact.int.skysail.io/pact/v1/turn?media=json';
+  static getTurnUrl(): string {
+    return environment.turnUrl;
   };
 }

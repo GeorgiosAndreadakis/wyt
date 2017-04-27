@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  confirmUrl: 'http://localhost:2018/pact/v1/confirmations/',
+  pactUrl: 'http://localhost:2018/pact/v1?media=json',
+  turnUrl: 'http://localhost:2018/pact/v1/turn?media=json'
 };
