@@ -1,18 +1,18 @@
 import {Injectable} from '@angular/core';
-import {environment} from './environments';
+import {environment} from '../environments/environment';
 
 @Injectable()
 export class ConfigService {
 
-  static getConfirmUrl(): string {
+  getConfirmUrl(): string {
     return environment.confirmUrl;
   };
 
-  static getPactUrl(): string {
+  getPactUrl(): string {
     return environment.pactUrl;
   };
 
-  static getTurnUrl(): string {
+  getTurnUrl(): string {
     return environment.turnUrl;
   };
 }
